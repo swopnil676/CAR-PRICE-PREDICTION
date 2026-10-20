@@ -14,7 +14,9 @@ st.caption(
 )
 
 # --- Inputs (match your dataset columns exactly) ---
-car_name = st.text_input("Car_Name (e.g. swift, ritz, sx4)", value="swift")
+car_name = st.selectbox(
+    "Car_Name (e.g. swift, ritz, sx4)",["ritz","sx4","ciaz","wagon r","swift","vitara brezza","alto 800","alto k10","ertiga","dzire","fortuner","innova","corolla altis","i20","grand i10","city","verna","creta","brio","amaze","jazz"]
+)
 
 year = st.number_input("Year", min_value=1990, max_value=2026, value=2014, step=1)
 
