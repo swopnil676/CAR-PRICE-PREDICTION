@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
-from schema import CarFeatures, PredictionResponse
-from model import predict_price, load_artifacts
+from app.schema import CarFeatures, PredictionResponse
+from app.model import predict_price, load_artifacts
 from fastapi.middleware.cors import CORSMiddleware
 
 
