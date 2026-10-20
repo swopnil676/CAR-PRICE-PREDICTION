@@ -77,7 +77,7 @@ Open Terminal 1 in VS Code and navigate to the backend project root, the directo
 python -m uvicorn app.main:app --reload
 ```
 
-Backend URL: http://127.0.0.1:8000
+Backend URL: https://car-price-prediction-3-ooum.onrender.com/docs
 
 API documentation: http://127.0.0.1:8000/docs
 
@@ -97,7 +97,7 @@ Start the frontend:
 python -m streamlit run streamlit_app.py
 ```
 
-Frontend URL: http://localhost:8501
+Frontend URL: https://car-price-prediction-bdxxqvprffszgjrn9bej73.streamlit.app/
 
 Keep both terminals running while using the application.
 
