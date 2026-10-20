@@ -56,6 +56,10 @@ if st.button("Predict Price 💰"):
         if res.status_code == 200:
             data = res.json()
 
+            st.write("### Actual API Response")
+            st.json(data)
+            st.write("Response type:", type(data).__name__)
+
             # adjust keys based on your API response
             # common patterns: {"prediction": 3.45} or {"predicted_price": 3.45}
             pred = data.get("prediction", data.get("predicted_price", None))
